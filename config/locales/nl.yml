@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      badges:
+        title: Badges
+    badges:
+      admin:
+        badges:
+          actions:
+            create_new: Maak een nieuwe Badge
+            reorder: Wijzig de volgorde van de Badges
+            reorder_done: Klaar met het wijzingen van de volgorde van de Badges
+          records:
+            title: Badges
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Badges. Druk op 'Maak een nieuwe Badge' om de eerste aan te maken.
+          badge:
+            view_live_html: Bekijk deze badge op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze badge
+            delete: Verwijder deze badge voor eeuwig
+      badges:
+        show:
+          other: Andere Badges
+  activerecord:
+    attributes:
+      'refinery/badges/badge':
+        title: Title
+        link: Link
+        image: Image
+        hidden: Hidden

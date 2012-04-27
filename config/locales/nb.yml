@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      badges:
+        title: Badges
+    badges:
+      admin:
+        badges:
+          actions:
+            create_new: Lag en ny Badge
+            reorder: Endre rekkefølgen på Badges
+            reorder_done: Ferdig å endre rekkefølgen Badges
+          records:
+            title: Badges
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Badges enda. Klikk på "Lag en ny Badge" for å legge til din første badge.
+          badge:
+            view_live_html: Vis hvordan denne badge ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne badge
+            delete: Fjern denne badge permanent
+      badges:
+        show:
+          other: Andre Badges
+  activerecord:
+    attributes:
+      'refinery/badges/badge':
+        title: Title
+        link: Link
+        image: Image
+        hidden: Hidden

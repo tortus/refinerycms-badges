@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      badges:
+        title: Badges
+    badges:
+      admin:
+        badges:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Badge
+            reorder: Réordonner les Badges
+            reorder_done: Fin de réordonnancement des Badges
+          records:
+            title: Badges
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Badge. Cliquer sur "Créer un(e) nouve(au/l/lle) Badge" pour créer votre premi(er/ère) badge.'
+          badge:
+            view_live_html: Voir ce(t/tte) badge <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) badge
+            delete: Supprimer définitivement ce(t/tte) badge
+      badges:
+        show:
+          other: Autres Badges
+  activerecord:
+    attributes:
+      'refinery/badges/badge':
+        title: Title
+        link: Link
+        image: Image
+        hidden: Hidden

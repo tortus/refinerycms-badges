@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Badges::Admin::BadgesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.badges_admin_badges_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_badges_admin_badge_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Badges::Admin::BadgesController.sortable? && ::Refinery::Badges::Badge.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Badges"),
+                 refinery.badges_admin_badges_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Badges"),
+                 refinery.badges_admin_badges_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

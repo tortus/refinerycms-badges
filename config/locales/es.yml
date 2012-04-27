@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      badges:
+        title: Badges
+#        article: masculino/femenino
+    badges:
+      admin:
+        badges:
+          actions:
+            create_new: Crear nuevo badge
+            reorder: Reordenar badges
+            reorder_done: Reordenación de badges completada
+          records:
+            title: Badges
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay badges todavía. Pulsa en "Crear nuevo Badge" para crear tu primer badge.
+          badge:
+            view_live_html: Ver este badge como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este badge
+            delete: Borrar este badge para siempre
+      badges:
+        show:
+          other: Otros badges
+  activerecord:
+    attributes:
+      'refinery/badges/badge':
+        title: Title
+        link: Link
+        image: Image
+        hidden: Hidden

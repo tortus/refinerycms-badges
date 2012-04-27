@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      badges:
+        title: Badges
+    badges:
+      admin:
+        badges:
+          actions:
+            create_new: Add New Badge
+            reorder: Reorder Badges
+            reorder_done: Done Reordering Badges
+          records:
+            title: Badges
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Badges yet. Click "Add New Badge" to add your first badge.
+          badge:
+            view_live_html: View this badge live <br/><em>(opens in a new window)</em>
+            edit: Edit this badge
+            delete: Remove this badge forever
+      badges:
+        show:
+          other: Other Badges
+  activerecord:
+    attributes:
+      'refinery/badges/badge':
+        title: Title
+        link: Link
+        image: Image
+        hidden: Hidden
