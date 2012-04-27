@@ -5,7 +5,7 @@ class CreateBadgesBadges < ActiveRecord::Migration
       t.string :title
       t.string :link
       t.integer :image_id
-      t.boolean :hidden
+      t.boolean :hidden, :default => false, :null => false
       t.integer :position
 
       t.timestamps
