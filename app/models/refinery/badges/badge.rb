@@ -10,6 +10,9 @@ module Refinery
       belongs_to :image, :class_name => '::Refinery::Image'
       
       attr_accessible :title, :link, :image_id, :hidden, :position
+      
+      scope :active, where(:hidden => false)
+      scope :by_position, :order => "position ASC"
         
     end
   end
