@@ -8,6 +8,7 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
           
       belongs_to :image, :class_name => '::Refinery::Image'
+      validates :image, :presence => true
       
       attr_accessible :title, :link, :image_id, :hidden, :position
       
