@@ -13,6 +13,9 @@ module Refinery
       
       scope :active, where(:hidden => false)
       scope :by_position, :order => "position ASC"
+      
+      # Determine whether a link has been entered for the badge.
+      def link?; not link.blank?; end
         
     end
   end
