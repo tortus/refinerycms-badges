@@ -33,7 +33,7 @@
   </div>
   
   <%= render '/refinery/admin/form_actions', :f => f,
-             :continue_editing => false,
+             :continue_editing => true,
              :delete_title => t('delete', :scope => 'refinery.badges.admin.badges.badge'),
              :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @badge.title) %>
 <% end -%>
