@@ -12,11 +12,18 @@ module Refinery
       
       attr_accessible :title, :link, :image_id, :hidden, :position
       
-      scope :active, where(:hidden => false)
-      scope :by_position, :order => "position ASC"
-      
       # Determine whether a link has been entered for the badge.
       def link?; not link.blank?; end
+      
+      # Returns badges with hidden == false
+      def self.active
+        where(:hidden => false)
+      end
+      
+      # Order badges by position ascending
+      def self.by_position
+        order("position ASC")
+      end
         
     end
   end
