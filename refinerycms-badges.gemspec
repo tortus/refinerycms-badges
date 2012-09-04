@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-badges'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Badges extension for Refinery CMS'
+  s.authors           = ['Tortus Technologies']
   s.date              = '2012-04-27'
   s.summary           = 'Badges extension for Refinery CMS'
   s.require_paths     = %w(lib)
